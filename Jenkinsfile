@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+
+        stage('Checkout SCM') {
             steps {
-                echo 'Checking out source code...'
+                checkout scm
             }
         }
 
@@ -19,6 +20,7 @@ pipeline {
                 bat 'python -m pytest'
             }
         }
+
     }
 
     post {
