@@ -3,3 +3,5 @@ def add(a, b):
 
 if __name__ == "__main__":
     print("Addition:", add(10, 20))
+    
+    print("Webhook test")
